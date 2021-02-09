@@ -25,8 +25,6 @@ app.use('*', (req, res) => {
 
 app.use((err, req, res, next) => {
   console.log(err);
-  if (err.name === 'ValidationError' || err.name === 'TypeError')
-    return res.sendStatus(400);
   res.status(err.status || 500).send({ message: err.message });
 });
 
