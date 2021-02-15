@@ -1,6 +1,6 @@
 const { Router } = require('express');
 const handleAsyncError = require('./middleware/handleAsyncError');
-const { mpapi } = require('./logic');
+const { mpapi } = require('./js-rpcapi');
 
 const router = Router();
 
