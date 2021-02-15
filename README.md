@@ -11,7 +11,7 @@ npm start // for start local service
 
 1 - Create new account
 <pre><code>// Generate seed phrase
-POST 'mapapi/generate-mnemonic'
+POST 'mpapi/generate-mnemonic'
 // Generate new keys of account
 POST 'mpapi/generate-keys' body: { mnemonic }
 </code></pre>

@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const helmet = require('helmet');
 const cookieParser = require('cookie-parser');
 const controller = require('./controller');
-const { mpapi } = require('./logic');
+const { mpapi } = require('./js-rpcapi');
 
 mpapi.node.setProvider(process.env.PROVIDER);
 if (process.env.DEBUG == 'true') {
